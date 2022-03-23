@@ -73,7 +73,10 @@ def prepare_zillow(df):
 
     # removing outliers
         df = remove_outliers(df, 1.5, ['bedrooms', 'bathrooms', 'area', 'tax_value', 'taxamount'])
-    
+        
+        
+        df['bathrooms'] = df['bathrooms'].replace({1.75 : 2})
+        
     # converting column datatypes
         df.fips = df.fips.astype(object)
         df.year_built = df.year_built.astype(object)
@@ -88,6 +91,7 @@ def prepare_zillow(df):
         imputer.fit(train[['year_built']])
 
         train[['year_built']] = imputer.transform(train[['year_built']])
+        train['home_age'] = (2017 - train['year_built'])
         validate[['year_built']] = imputer.transform(validate[['year_built']])
         test[['year_built']] = imputer.transform(test[['year_built']])       
     

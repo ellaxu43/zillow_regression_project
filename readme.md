@@ -1,5 +1,6 @@
 # Project Goal
-Zillow has a model that is designed to predict the property tax assessed values ('taxvaluedollarcnt') of Single Family Properties that had a transaction during 2017. The goal of this project is to look for insights that can help possibly improve this model, and make recommendations on how to improve it.
+Zillow has a model that is designed to predict the property tax assessed values ('taxvaluedollarcnt') of Single Family Properties that had a transaction during 2017. The goal of this project is to look for insights that can help possibly improve this model, and make recommendations on how to improve it. One step futher, the concept of  my model can be used in many other dataset to produce the great insight. 
+
 ***
 
 # Project Description
@@ -45,16 +46,10 @@ Planning:
 * year: The Year the principal residence was built
 * fips: Federal Information Processing Standard code
 * sqft: Calculated total finished living area of the home
-* lot_sqft: Area of the lot in square feet
-* three_qtr_bath: Number of 3/4 bathrooms in house (shower + sink + toilet)
 * bath: Number of bathrooms in home including fractional bathrooms
 * bed: Number of bedrooms in home
-* fireplaces: Number of fireplaces in a home (if any)
-* garagecarcnt: Total number of garages on the lot including an attached garage
-* pool: Number of pools on the lot (if any)
-* rooms: Total number of rooms in the principal residence
 * taxamount: The total property tax assessed for that assessment year
-* tax_value: The total tax assessed value of the parcel
+
 
 
 # Steps to Reproduce
@@ -88,4 +83,4 @@ Evaluate the top performing model on the test sample, note observations.
 
 
 # Next Steps 
-With more time, I would like to dive deeper into the zillow database and implement feature engineering to discover the best combination of available features to predict home values.
+With more time, I would like to dive deeper into the zillow database and implement feature engineering to discover the best combination of available features to predict home values.# zillow_regression_project
