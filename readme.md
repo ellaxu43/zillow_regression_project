@@ -67,8 +67,27 @@ Run the final_report.ipynb notebook
 
 
 # Initial Questions for the Project
+### Overall Questions: 
+What's the distribution of the home values?
 
-# Key Findings
+What's the distribution of the building years?
+
+What's tax_value of homes through the years?¶
+
+Are homes with more bedrooms and bathrooms worth more?
+
+Are homes in certain areas worth more than one other?
+
+Are homes with bigger area worth more?
+
+What are two features have strongest relationship with tax_value?
+
+### Statistical Test Questions:
+Are homes with more bedrooms worth more?
+
+Do younger homes worth more?
+
+
 
 # Model
 Select a metric to use for evaluating models and explain why that metric was chosen.
@@ -81,6 +100,7 @@ Evaluate all three models on the train sample, note observations.
 Evaluate the top two models on the validate sample, note observations.
 Evaluate the top performing model on the test sample, note observations.
 
+# Key Findings
 
 # Next Steps 
 With more time, I would like to dive deeper into the zillow database and implement feature engineering to discover the best combination of available features to predict home values.# zillow_regression_project
