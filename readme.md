@@ -9,6 +9,7 @@ Zillow has data on roughly 110 million homes across the United States.The compan
 
 As the most visited real estate website in the United States, Zillow and its affiliates provide customers with an on-demand experience selling, buying, leasing and financing with a transparent and near-seamless end-to-end service. It's all thanks to Zillow's well-tested models that can help them predict the value of nearly any home. However, as we all know, the real estate market is constantly volatile and changing. As such, Zillow's model should also be constantly changing and improving to ensure the best, most up-to-date approximation of home values. We will analyze the data provided by the 2017 transactions to see if any new features can be designed, develop models with these features to compare with zillow's current models, and provide recommendations in the form of presentations on what works and what doesn't.
 
+***
 
 # Project Planning
 Plan -> Acquire -> Prepare -> Explore -> Model & Evaluate -> Deliver
@@ -42,16 +43,17 @@ Planning:
 * Deliver a 5 minute presentation via a jupyter notebook walkthrough
 * Answer questions about my code, process, and findings
 
+***
 # Data Dictionary
-* year: The Year the principal residence was built
+* yearbuilt: The Year the principal residence was built
 * fips: Federal Information Processing Standard code
-* sqft: Calculated total finished living area of the home
-* bath: Number of bathrooms in home including fractional bathrooms
-* bed: Number of bedrooms in home
-* taxamount: The total property tax assessed for that assessment year
+* calculatedfinishedsquarefeet: Calculated total finished living area of the home
+* bathroomcnt: Number of bathrooms in home including fractional bathrooms
+* bedroomcnt: Number of bedrooms in home
+* taxvaluedollarcnt: The total property tax assessed for that assessment year
 
 
-
+***
 # Steps to Reproduce
 You will need your own env file with database credentials along with all the necessary files listed below to run the "Final Report" notebook.
 
@@ -65,7 +67,7 @@ Add your own env file to your directory with username, password, and host addres
 
 Run the final_report.ipynb notebook
 
-
+***
 # Initial Questions for the Project
 ### Overall Questions: 
 What's the distribution of the home values?
@@ -88,6 +90,7 @@ Are homes with more bedrooms worth more?
 Do younger homes worth more?
 
 
+***
 
 # Model
 Select a metric to use for evaluating models and explain why that metric was chosen.
@@ -100,7 +103,20 @@ Evaluate all three models on the train sample, note observations.
 Evaluate the top two models on the validate sample, note observations.
 Evaluate the top performing model on the test sample, note observations.
 
+***
 # Key Findings
+There is somewhat of a relationship between bathrooms, square feet, and bedroom count in predicting the tax value dollar count of single family units. Bathrooms and bedrooms count were shown as the biggest driver.
+
+Also, data shows homes that are newer appraise at a higher value. I think that critical parts of the house, like plumbing, electrical, the roof, and appliances are newer and therefore less likely to break down, can generate savings for a buyer
+
+*** 
+# Recomandation
+The data suggest Bathrooms, Bedrooms, and Squarefeet to be the most valued features. I recommend removing outliers from these columns to improve future modeling.
+
+
 
 # Next Steps 
-With more time, I would like to dive deeper into the zillow database and implement feature engineering to discover the best combination of available features to predict home values.# zillow_regression_project
+With more time I would work on improving the model adding more parameters
+
+
+With more time, I would like to dive deeper into the zillow database and implement feature engineering to discover the best combination of available features to predict home values.
